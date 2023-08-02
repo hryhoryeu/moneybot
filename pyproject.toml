@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "money-project-bot"
+version = "0.1.0"
+description = ""
+authors = ["Yahor Hryhoryeu <yahor.h@elsewhen.com>"]
+readme = "README.md"
+packages = [{include = "money_project_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = "^20.4"
+pydantic-settings = "^2.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

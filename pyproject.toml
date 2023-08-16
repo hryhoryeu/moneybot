@@ -4,13 +4,20 @@ version = "0.1.0"
 description = ""
 authors = ["Yahor Hryhoryeu <yahor.h@elsewhen.com>"]
 readme = "README.md"
-packages = [{include = "money_project_bot"}]
+packages = [{ include = "money_project_bot" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 python-telegram-bot = "^20.4"
 pydantic-settings = "^2.0.2"
+pytesseract = "^0.3.10"
+pillow = "^10.0.0"
+opencv-python = "^4.8.0.74"
+numpy = "^1.25.2"
 
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
 
 [build-system]
 requires = ["poetry-core"]
